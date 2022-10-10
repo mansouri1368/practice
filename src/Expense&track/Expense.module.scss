@@ -1,0 +1,54 @@
+.inputField{
+    display:flex;
+    flex-direction: column;
+    width:70%;
+    
+    
+    
+    label{
+        font-size: 2rem;
+        font-weight: 'bold';
+        
+    }
+   input{
+    border-radius: 5px;
+    width:80%;
+    background-color: aquamarine;
+    font-size: 1.5 rem;
+   }
+   input.invalid{
+    background-color: brown;
+}
+   textarea{
+    border-radius: 5px;
+    width:80%;
+    background-color: aquamarine;
+    font-size: 1.5 rem;
+    height: 200px;
+    
+   }
+   textarea.invalid{
+    background-color: brown;
+}
+}
+
+.form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    .buttonContainer{
+        display:flex;
+        margin-top: 10px;
+        width:70%;
+    
+    button{
+        width:20%;
+        background-color: purple;
+        color:aliceblue;
+        align-self: flex-start;
+    }
+    }
+    
+}

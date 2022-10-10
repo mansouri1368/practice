@@ -1,0 +1,36 @@
+/* AuthForm */
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form label{
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+}
+
+.form input{
+    width:30%;
+    background-color: aquamarine;
+    font-size: 1rem;
+}
+.form input.invalid{
+    background-color: brown;
+}
+
+.buttonContainer{
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+    width:30%
+    
+}
+
+.buttonContainer button{
+    width:20%;
+
+}

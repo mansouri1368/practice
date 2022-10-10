@@ -1,0 +1,116 @@
+$colors:(main:#521751, secondary:#fa923f,third:white);
+$border-default:0.05rem solid map-get($colors, main );
+
+@mixin display(){
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+    
+@mixin media($width) {
+    @media (min-width: $width) {
+        @content;
+     }
+}
+
+
+.char-highlight {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: map-get($colors, main ); }
+  
+  html {
+    font-size: 94.75%;
+    @include media(40rem){
+        font-size: 125%; 
+}
+}
+    
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0; }
+  
+  .container {
+    @include display();
+    flex: {
+        direction:column;
+        wrap:nowrap
+    }
+    
+    align-items: center;
+    padding: 3rem 0;
+    box-sizing: border-box; }
+
+    .sass-section {
+        border: $border-default;
+        background: lighten(map-get($colors,main),70%);
+        padding: 2rem;
+        text-align: center;
+        width: 90%;
+        box-sizing: border-box;
+        @include media(40rem){
+                width: 30rem; 
+    
+        }
+    }
+   
+     
+  .sass-introduction {
+    @extend .sass-section;
+    box-shadow: 0.2rem 0.2rem 0.1rem #ccc;
+    p{
+        margin: 0;
+    }
+   }
+   
+  
+  .sass-details {
+    @extend .sass-section;
+    margin: 2rem 0; }
+  
+  .section-header {
+    border-bottom:$border-default;
+    h1{
+        margin: 0 0 1rem 0;
+    }
+   }
+    
+   @keyframes list {
+    from {width:50%}
+    to {width:100%}
+  }
+
+  .documentation-links {
+    list-style: none;
+    margin: 1rem 0 0 0;
+    padding: 0;
+    @include display();
+    
+    flex-direction: column;
+    li {
+        margin: 0.2rem 0;
+        background: map-get($colors , third );
+        
+        &:hover{
+          animation: list 2s;
+        }
+     }
+     .documentation-link {
+        text-decoration: none;
+        color: map-get($colors , main );
+        display: block;
+        padding: 0.2rem;
+        border: $border-default;
+        &:hover,
+        &:active{
+            color: map-get($colors , third );
+            background: map-get($colors , secondary );
+            border-color: map-get($colors , secondary );
+        };
+        
+    }
+}
+   
+      

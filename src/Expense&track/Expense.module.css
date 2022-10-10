@@ -1,0 +1,49 @@
+.inputField {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+.inputField label {
+  font-size: 2rem;
+  font-weight: "bold";
+}
+.inputField input {
+  border-radius: 5px;
+  width: 80%;
+  background-color: aquamarine;
+  font-size: 1.5 rem;
+}
+.inputField input.invalid {
+  background-color: brown;
+}
+.inputField textarea {
+  border-radius: 5px;
+  width: 80%;
+  background-color: aquamarine;
+  font-size: 1.5 rem;
+  height: 200px;
+}
+.inputField textarea.invalid {
+  background-color: brown;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+.form .buttonContainer {
+  display: flex;
+  margin-top: 10px;
+  width: 70%;
+}
+.form .buttonContainer button {
+  width: 20%;
+  background-color: purple;
+  color: aliceblue;
+  align-self: flex-start;
+}
+
+/*# sourceMappingURL=Expense.module.css.map */
